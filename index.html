@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="HTML5, CSS3, JavaScript, jQuery, R-ECO, Game" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="cleartype" content="on" />
+		<meta name="MobileOptimized" content="width" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+		<title>R-ECO</title>
+		<link rel="stylesheet" href="css/game.css" />
+		<link rel="shortcut icon" href="images/recycleIcon.gif"/>
+	</head>
+	<body>
+		<header></header>
+		<div id="game">
+			<div id="mainArea">
+				<div id="blue" class="colorArea">
+					<div class="factory iconPile"></div>
+					<img src="images/blueFactory.png" class="decorate" />
+					<div class="scorePile"></div>
+					<div class="dump iconPile"></div>
+					<img src="images/stone.gif" class="decorate"/>
+				</div>
+				<div id="green" class="colorArea">
+					<div class="factory iconPile"></div>
+					<img src="images/greenFactory.png" class="decorate" />
+					<div class="scorePile"></div>
+					<div class="dump iconPile"></div>
+					<img src="images/stone.gif" class="decorate"/>
+				</div>
+				<div id="yellow" class="colorArea">
+					<div class="factory iconPile"></div>
+					<img src="images/yellowFactory.png" class="decorate" />
+					<div class="scorePile"></div>
+					<div class="dump iconPile"></div>
+					<img src="images/stone.gif" class="decorate"/>
+				</div>
+				<div id="red" class="colorArea">
+					<div  class="factory iconPile"></div>
+					<img src="images/redFactory.png" class="decorate" />
+					<div class="scorePile"></div>
+					<div class="dump iconPile"></div>
+					<img src="images/stone.gif" class="decorate"/>
+				</div>
+			</div>
+			<div id="playerPanel">
+				<div id="handIcons"></div>
+				<img src="images/man.gif" id="man"/>
+				<div id="instruction">
+					<img src="images/speechBubble.png"/>
+					<div>
+						<p id="manSay">
+							Choose one color to Play
+						</p>
+					</div>
+				</div>
+				<div id="scores"></div>
+			</div>
+			<img src="images/grassLong.gif" id="grass"/>
+			<div id="totalScore">
+				Score: 0
+			</div>
+			<div id="welcome" class="popup">
+				<div class="center">
+					<div class="gameTitle">
+						R-ECO Solitaire
+					</div>
+					<div id="welcomeHighScore">
+						High Score: 0
+					</div>
+					<div id="howButton" class="startButton how">
+						How to play
+					</div>
+					<div id="easyButton" class="startButton easy">
+						Easy
+					</div>
+					<div id="normalButton" class="startButton normal">
+						Normal
+					</div>
+				</div>
+			</div>
+			<div id ="helpPage" class="hide"></div>
+			<div id="gameOver" class="popup hide">
+				<div class="center">
+					<div id="state" class="gameTitle">
+						Game Over
+					</div>
+					<div id="endScore">
+						Score: 0
+					</div>
+					<div id="highScore">
+						High Score: 0
+					</div>
+					<div id="restart" class = "restart">
+						Click to restart
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div>
+				HTML5 Powered with CSS3 / Styling, Semantics, and Offline Storage
+			</div>
+			<img src="images/html5Badge.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Semantics, and Offline &amp; Storage" >
+			<div id="testBlock5">
+				animating: 0
+			</div>
+			<div>
+				<br/>
+				<p>
+					author: 张鑫(Zhang Xin)
+				</p>
+				<p>
+					mail:116943915@qq.com
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/TweenLite.min.js"></script>
+		<script type="text/javascript" src="js/CSSPlugin.min.js"></script>
+		<script type="text/javascript" src="js/game.min.js"></script>
+	</body>
+</html>

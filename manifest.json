@@ -1,0 +1,21 @@
+{
+    "name": "R-ECO"
+    ,"version":"2.1"
+    ,"manifest_version":2
+    ,"description":"Solitaire version of card game R-ECO"
+    ,"app": {
+        "launch": {
+            "local_path": "index.html"
+        }
+    }
+    ,"icons":{
+        "16": "16.png",
+		"32": "32.png",
+		"64": "64.png",
+		"128": "128.png",
+		"256": "256.png"
+    }
+   ,"permissions": [
+       "unlimitedStorage"
+   ]
+}

@@ -1,0 +1,30 @@
+R-ECO Solitaire V1.2.1
+
+Powerd by HTML5, without any Flash plugin.
+Perform best in modern web browsers.
+
+Game Rules:
+
+Choose one color to dispose.
+
+When the factory have 4 icons, take score.
+
+After disposal, take all garbage from dump site into your hand.
+
+Refull dump site to 1 more garbage then factory.
+
+If more then 6 garbage in hand, you lose.
+
+All scores of a color are taken, you win, and get additional 4 points.
+
+* Click the score icon to immediacy take score, but only worth 1 point.
+
+Normal mode has more scores, but only 5 garbage most in hand.
+
+
+This game is well tested, best players can score 90+.
+
+Have fun!
+
+Author: Zhang Xin
+Mail: 116943915@qq.com
