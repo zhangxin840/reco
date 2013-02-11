@@ -1,5 +1,5 @@
-reco
-====
+R-ECO
+=====
 
 Solitaire version of card game R-ECO.
 
