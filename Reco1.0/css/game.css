@@ -1,0 +1,293 @@
+/*Author: Zhang Xin
+ Mail: 116943915@qq.com
+ */
+
+@media screen {
+	@font-face {
+		font-family: 'Orbitron';
+		font-style: normal;
+		font-weight: 900;
+		src: local('Orbitron-Black'), url('http://themes.googleusercontent.com/static/fonts/orbitron/v3/FyvTORElv6iWeP2Jf9yG3YbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+	}
+}
+@media screen {
+	@font-face {
+		font-family: 'Droid Serif';
+		font-style: normal;
+		font-weight: normal;
+		src: local('Droid Serif'), local('DroidSerif'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v3/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+	}
+}
+
+body{
+	background: url(../images/pattern.png);
+}
+
+.footer {
+	font-family: 'Droid Serif', arial, serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 50px;
+}
+.footer * {
+	margin: 3px;
+}
+#game {
+	border-radius: 35px;
+	border: 2px solid #666;
+	position: relative;
+	background: url(../images/background.gif);
+	width: 900px;
+	height: 550px;
+	margin: 30px auto auto auto;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+#mainArea {
+	margin: 10px auto auto auto;
+	width: 750px;
+}
+#playerPanel {
+	position: relative;
+	margin: 0 auto auto auto;
+	width: 700px;
+	height: 130px;
+}
+img.icon {
+	position: absolute;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	box-shadow: 1px 1px 1px #333;
+	border-radius: 10px;
+	z-index: 1;
+}
+img.icon.front:hover {
+	z-index: 2;
+}
+img.icon.round {
+	border-radius: 25px;
+}
+img.icon.round.lastScore:hover {
+	top: -5px;
+	border-radius: 25px;
+	box-shadow: 3px 3px 3px #333;
+	cursor: pointer; cursor: hand;
+}
+img.icon.hand {
+	position: relative;
+	float: right;
+	margin: auto 4px auto 4px;
+	box-shadow: 4px 4px 4px #555;
+}
+img.icon.hand:hover {
+	box-shadow: 2px 2px 2px #555;
+	top: -5px;
+	cursor: pointer; cursor: hand;
+}
+img.icon.hand.prepare {
+	box-shadow: 0 0 35px #eee;
+	top: -13px;
+}
+.slot1 {
+	top: 55px;
+	left: 0;
+}
+.slot2 {
+	top: 55px;
+	left: 55px;
+}
+.slot3 {
+	top: 0;
+	left: 0;
+}
+.slot4 {
+	top: 0;
+	left: 55px;
+}
+img.decorate {
+	display: block;
+}
+.colorArea {
+	display: inline-block;
+	width: 180px;
+}
+.iconPile {
+	position: relative;
+	margin: auto;
+	width: 105px;
+	height: 105px;
+}
+.scorePile {
+	position: relative;
+	margin: 5px auto 5px auto;
+	width: 130px;
+	height: 50px;
+}
+#handIcons {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 370px;
+}
+#man {
+	position: absolute;
+	float: right;
+	width: 80px;
+	top: 5px;
+	left: 370px;
+	z-index: 0;
+}
+#grass {
+	position: relative;
+	display: block;
+	top: -10px;
+	width: 740px;
+	height: 15px;
+	margin: auto;
+	z-index: 2;
+}
+#scores {
+	position: absolute;
+	top: 80px;
+	left: 450px;
+	width: 210px;
+}
+#instruction {
+	position: absolute;
+	top: 15px;
+	left: 230px;
+}
+#instruction img {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+}
+#instruction div {
+	position: absolute;
+	width: 125px;
+	height: 40px;
+}
+#instruction p {
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 10px;
+	text-align: center;
+	color: #222;
+	margin: 2px auto auto auto;
+}
+#instruction p.ok {
+	font-size: 22px;
+	color: #222;
+	margin: 7px auto auto auto;
+	text-decoration: underline;
+}
+#instruction p.ok:hover {
+	font-size: 26px;
+	margin: 4px auto auto auto;
+		cursor: pointer; cursor: hand;
+}
+.discription {
+	font-family: 'Droid Serif', arial, serif;
+	font-size: 18px;
+	text-align: center;
+	color: #ccc;
+	margin: 10px;
+}
+/* Styles for game over popup */
+.popup {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 30px;
+	background: rgba(43,63,99,.7);
+	z-index: 3;
+}
+#helpPage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 30px;
+	z-index: 4;
+	background: url(../images/helpPage.gif);
+}
+.hide {
+	display: none;
+}
+.popup div.center {
+	margin: 150px auto auto auto;
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+.popup div.center * {
+	margin: 20px auto auto auto;
+}
+.popup div.gameTitle {
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+	text-align: center;
+	margin: auto auto 30px auto;
+	color: #3f7be4;
+}
+.popup div.restart {
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	text-align: center;
+	color: #e9eb3b;
+	margin: 50px auto auto auto;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.popup div.restart:hover {
+	font-size: 33px;
+	cursor: pointer; cursor: hand;
+}
+#welcomeHighScore {
+	font-size: 20px;
+	margin: auto;
+}
+#totalScore {
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 32px;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.startButton {
+	font-family: 'Orbitron', verdana, sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	color: #fff;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+	cursor: pointer; cursor: hand;
+}
+.startButton:hover {
+	font-size: 50px;
+}
+.startButton.easy {
+	color: #badd35;
+}
+.startButton.normal {
+	color: #ff6d47;
+}
+.startButton.how {
+	font-size: 25px;
+	color: #ffc827;
+}
+.startButton.how:hover {
+	font-size: 30px;
+}
+
